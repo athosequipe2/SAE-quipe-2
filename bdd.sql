@@ -188,14 +188,14 @@ INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
  VALUES (4, 'Pierre', 'Fred','Pierre.Fred@gmail.com',4);
 
- INSERT INTO Document (Document_ID, Type, URL ,Version , Student_ID)
- VALUES (1, 'CV', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,1);
-  INSERT INTO Document (Document_ID, Type, URL ,Version , Student_ID)
- VALUES (2, 'CV', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,2);
-  INSERT INTO Document (Document_ID, Type, URL ,Version , Student_ID)
- VALUES (3, 'LM', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,3);
-  INSERT INTO Document (Document_ID, Type, URL ,Version , Student_ID)
- VALUES (4, 'CV', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',2,4);
+ INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
+ VALUES (1, 'CV','2001-05-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,1);
+  INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
+ VALUES (2, 'CV','2001-04-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,2);
+  INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
+ VALUES (3, 'LM','2001-06-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,3);
+  INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
+ VALUES (4, 'CV','2001-01-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',2,4);
 
 INSERT INTO Commentaire (Commentaire_ID, Visibilite_flag, Vue_flag,Commentaire,Personnel_ID,Document_ID)
  VALUES (1, 0, 'true','mauvais',1,1);
