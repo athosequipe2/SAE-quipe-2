@@ -86,7 +86,7 @@ CREATE TABLE Stage(
 CREATE TABLE Document(
    Document_ID INT,
    Type VARCHAR(50),
-   Date_heure DATETIME,
+   Date_heure DATE,
    URL VARCHAR(150),
    Version INT,
    Student_ID INT NOT NULL,
@@ -216,10 +216,10 @@ INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,
 VALUES (4, 'developpeur web', 2022 ,9,'false',1,1,4,2);
 
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
-     VALUES(1, 'En attente', 'True', 1);
+ VALUES(1, 'En attente', 'True', 1);
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
-     VALUES(2, 'Validé', 'True', 2);
+ VALUES(2, 'Validé', 'True', 2);
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
-     VALUES(3, 'Refusé', 'False', 3);
+ VALUES(3, 'Refusé', 'False', 3);
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
-     VALUES(4, 'Validé', 'False', 4);
+ VALUES(4, 'Validé', 'False', 4);
