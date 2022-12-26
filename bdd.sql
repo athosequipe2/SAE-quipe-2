@@ -27,7 +27,7 @@ CREATE TABLE Tuteur(
    Contact VARCHAR(50),
    Entreprise_ID INT NOT NULL,
    PRIMARY KEY(Tuteur_ID),
-   FOREIGN KEY(Entreprise_ID) REFERENCES Entrerpise(Entreprise_ID)
+   FOREIGN KEY(Entreprise_ID) REFERENCES Entreprise(Entreprise_ID)
 );
 
 
@@ -63,7 +63,7 @@ CREATE TABLE Etudiant(
    Formation_ID INT NOT NULL,
    PRIMARY KEY(Student_ID),
    FOREIGN KEY(Personnel_ID) REFERENCES Personnel(Personnel_ID),
-   FOREIGN KEY(Entreprise_ID) REFERENCES Entrerpise(Entreprise_ID),
+   FOREIGN KEY(Entreprise_ID) REFERENCES Entreprise(Entreprise_ID),
    FOREIGN KEY(Formation_ID) REFERENCES Formation(Formation_ID)
 );
 
