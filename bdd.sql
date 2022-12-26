@@ -189,13 +189,13 @@ INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
  VALUES (4, 'Pierre', 'Fred','Pierre.Fred@gmail.com',12104130);
 
  INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
- VALUES (1, 'CV','2001-05-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,1);
+ VALUES (1, 'CV','2001-05-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,12104123);
   INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
- VALUES (2, 'CV','2001-04-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,2);
+ VALUES (2, 'CV','2001-04-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,12104124);
   INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
- VALUES (3, 'LM','2001-06-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,3);
+ VALUES (3, 'LM','2001-06-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,12104127);
   INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
- VALUES (4, 'CV','2001-01-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',2,4);
+ VALUES (4, 'CV','2001-01-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',2,12104130);
 
 INSERT INTO Commentaire (Commentaire_ID, Visibilite_flag, Vue_flag,Commentaire,Personnel_ID,Document_ID)
  VALUES (1, 0, 'true','mauvais',1,1);
@@ -207,13 +207,13 @@ INSERT INTO Commentaire (Commentaire_ID, Visibilite_flag, Vue_flag,Commentaire,P
  VALUES (4, 1, 'true','A refaire',2,3);
 
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
- VALUES (1, 'developpeur web', 2022 ,8,'true',1,1,2,1);
+ VALUES (1, 'developpeur web', 2022 ,8,'true',1,1,12104123,1);
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
- VALUES (2, 'réseau', 2022 ,9,'true',1,2,2,3);
+ VALUES (2, 'réseau', 2022 ,9,'true',1,2,12104124,3);
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
- VALUES (3, 'réseau', 2021 ,10,'true',1,3,3,2);
+ VALUES (3, 'réseau', 2021 ,10,'true',1,3,12104127,2);
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
-VALUES (4, 'developpeur web', 2022 ,9,'false',1,1,4,2);
+VALUES (4, 'developpeur web', 2022 ,9,'false',1,1,12104130,2);
 
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
  VALUES(1, 'En attente', 'True', 1);
