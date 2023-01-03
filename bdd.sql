@@ -1,14 +1,13 @@
-DROP TABLE Entreprise;
-DROP TABLE Tuteur;
-DROP TABLE Formation;
-DROP TABLE Personnel;
-DROP TABLE Etudiant;
-DROP TABLE Stage;
-DROP TABLE Document;
 DROP TABLE BOS;
-DROP TABLE Commentaire;
 DROP TABLE login;
-
+DROP TABLE Stage;
+DROP TABLE Commentaire;
+DROP TABLE Document;
+DROP TABLE Tuteur;
+DROP TABLE Etudiant;
+DROP TABLE Personnel;
+DROP TABLE Formation;
+DROP TABLE Entreprise;
 
 CREATE TABLE Entreprise(
    Entreprise_ID INT,
@@ -142,7 +141,7 @@ INSERT INTO Formation(Formation_ID, Departement, Composante) VALUES (4, 'Licence
 INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (1, 'AUDIBERT', 'Laurent', 'laurent.audibert@univ-paris13.fr', 'true', 'Validateur', 1);
 INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (2, 'ZARGAYOUNA','Haifa', 'haifa.zargayouna@lipn.univ-paris13.fr', 'true', 'Validateur', 2);
 INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (3, 'HEBERT', 'David', 'hebert.iut@gmail.com', 'true', 'Validateur', 3);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'BUTELLE', 'Franck', 'franck.butelle@lipn.univ-paris13.fr", "true', 'Validateur', 4);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'BUTELLE', 'Franck', 'franck.butelle@lipn.univ-paris13.fr', 'true', 'Validateur', 4);
 
 INSERT INTO Entreprise(Entreprise_ID, Nom, Description, Adresse, Telephone, Lieux)
     VALUES(1,'Microsoft','Developper Web','rue des chaussettes',911,'Paris');
