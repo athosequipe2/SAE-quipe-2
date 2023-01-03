@@ -179,13 +179,13 @@ INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility
     VALUES(12104130,'Truncks','Kid','KidTruncks@gmail.com','False','true', 'Aramis2022', 4, 3 ,2);
 
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
- VALUES (1, 'Chami', 'Charle','Chami.Charle@gmail.com',12104123);
+ VALUES (1, 'Chami', 'Charle','Chami.Charle@gmail.com',1);
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
- VALUES (2, 'Dupont', 'Martin','Dupont.Martin@gmail.com',12104124);
+ VALUES (2, 'Dupont', 'Martin','Dupont.Martin@gmail.com',2);
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
- VALUES (3, 'Mouton', 'Robert','Mouton.robert@gmail.com',12104127);
+ VALUES (3, 'Mouton', 'Robert','Mouton.robert@gmail.com',3);
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
- VALUES (4, 'Pierre', 'Fred','Pierre.Fred@gmail.com',12104130);
+ VALUES (4, 'Pierre', 'Fred','Pierre.Fred@gmail.com',4)B;
 
  INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
  VALUES (1, 'CV','2001-05-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,12104123);
