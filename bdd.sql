@@ -185,7 +185,7 @@ INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
  VALUES (3, 'Mouton', 'Robert','Mouton.robert@gmail.com',3);
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
- VALUES (4, 'Pierre', 'Fred','Pierre.Fred@gmail.com',4)B;
+ VALUES (4, 'Pierre', 'Fred','Pierre.Fred@gmail.com',4);
 
  INSERT INTO Document (Document_ID, Type, Date_heure,URL ,Version , Student_ID)
  VALUES (1, 'CV','2001-05-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',1,12104123);
