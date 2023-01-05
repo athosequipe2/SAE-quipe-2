@@ -42,7 +42,7 @@ CREATE TABLE Personnel(
    Nom VARCHAR(50),
    Prenom VARCHAR(50),
    Mail VARCHAR(100),
-   Visibility_flag BOOLEAN,
+   Visibility_flag BOOL,
    Role VARCHAR(50),
    Formation_ID INT,
    PRIMARY KEY(Personnel_ID),
@@ -54,8 +54,8 @@ CREATE TABLE Etudiant(
    Nom VARCHAR(50),
    Prenom VARCHAR(50),
    Mail VARCHAR(100),
-   Stage_detention BOOLEAN,
-   Visibility_flag BOOLEAN,
+   Stage_detention BOOL,
+   Visibility_flag BOOL,
    Groupe VARCHAR(50),
    Personnel_ID INT NOT NULL,
    Entreprise_ID INT NOT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE Stage(
    Mission VARCHAR(500),
    Année INT,
    Duree INT,
-   Gratification BOOLEAN,
+   Gratification BOOL,
    Teletravail INT,
    Personnel_ID INT NOT NULL,
    Student_ID INT NOT NULL,
@@ -96,7 +96,7 @@ CREATE TABLE Document(
 CREATE TABLE BOS(
    BOS_ID INT,
    Status VARCHAR(50),
-   BOS_Flag BOOLEAN,
+   BOS_Flag BOOL,
    Document_ID INT NOT NULL,
    PRIMARY KEY(BOS_ID),
    UNIQUE(Document_ID),
@@ -106,7 +106,7 @@ CREATE TABLE BOS(
 CREATE TABLE Commentaire(
    Commentaire_ID INT,
    Visibilite_flag INT,
-   Vue_flag BOOLEAN,
+   Vue_flag BOOL,
    Commentaire VARCHAR(500),
    Personnel_ID INT NOT NULL,
    Document_ID INT NOT NULL,
@@ -119,7 +119,7 @@ CREATE TABLE login(
    User_ID INT,
    Password VARCHAR(50),
    Username VARCHAR(50),
-   Role BOOLEAN,
+   Role BOOL,
    PRIMARY KEY(User_ID)
 );
 
