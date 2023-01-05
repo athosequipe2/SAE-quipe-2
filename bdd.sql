@@ -124,13 +124,13 @@ CREATE TABLE login(
 );
 
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (1, 'azerty', 'admin','true');
+ VALUES (1, 'azerty', 'admin','True');
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (2, 'qwerty', 'prof','true');
+ VALUES (2, 'qwerty', 'prof','True');
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (3, 'passw', 'secrétariat','true');
+ VALUES (3, 'passw', 'secrétariat','True');
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (4, 'mdp', 'étudiant','false');
+ VALUES (4, 'mdp', 'étudiant','False');
 
 INSERT INTO Formation(Formation_ID, Departement, Composante) VALUES (1, 'BUT1 Informatique', 150);
 INSERT INTO Formation(Formation_ID, Departement, Composante) VALUES (2, 'BUT2 Informatique', 75);
