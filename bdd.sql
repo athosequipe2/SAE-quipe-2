@@ -124,13 +124,13 @@ CREATE TABLE login(
 );
 
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (1, 'azerty', 'admin','True');
+ VALUES (1, 'azerty', 'admin',1);
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (2, 'qwerty', 'prof','True');
+ VALUES (2, 'qwerty', 'prof',1);
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (3, 'passw', 'secrétariat','True');
+ VALUES (3, 'passw', 'secrétariat',1);
 INSERT INTO login (User_ID, Password, Username,Role)
- VALUES (4, 'mdp', 'étudiant','False');
+ VALUES (4, 'mdp', 'étudiant',0);
 
 INSERT INTO Formation(Formation_ID, Departement, Composante) VALUES (1, 'BUT1 Informatique', 150);
 INSERT INTO Formation(Formation_ID, Departement, Composante) VALUES (2, 'BUT2 Informatique', 75);
@@ -138,10 +138,10 @@ INSERT INTO Formation(Formation_ID, Departement, Composante) VALUES (3, 'Licence
 INSERT INTO Formation(Formation_ID, Departement, Composante) VALUES (4, 'Licence2 Informatique ', 110);
 
 
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (1, 'AUDIBERT', 'Laurent', 'laurent.audibert@univ-paris13.fr', 'True', 'Validateur', 1);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (2, 'ZARGAYOUNA','Haifa', 'haifa.zargayouna@lipn.univ-paris13.fr', 'True', 'Validateur', 2);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (3, 'HEBERT', 'David', 'hebert.iut@gmail.com', 'True', 'Validateur', 3);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'BUTELLE', 'Franck', 'franck.butelle@lipn.univ-paris13.fr', 'True', 'Validateur', 4);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (1, 'AUDIBERT', 'Laurent', 'laurent.audibert@univ-paris13.fr', 1, 'Validateur', 1);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (2, 'ZARGAYOUNA','Haifa', 'haifa.zargayouna@lipn.univ-paris13.fr', 1, 'Validateur', 2);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (3, 'HEBERT', 'David', 'hebert.iut@gmail.com', 1, 'Validateur', 3);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'BUTELLE', 'Franck', 'franck.butelle@lipn.univ-paris13.fr', 1, 'Validateur', 4);
 
 INSERT INTO Entreprise(Entreprise_ID, Nom, Description, Adresse, Telephone, Lieux)
     VALUES(1,'Microsoft','Developper Web','rue des chaussettes',911,'Paris');
@@ -162,21 +162,21 @@ INSERT INTO Entreprise(Entreprise_ID, Nom, Description, Adresse, Telephone, Lieu
 
 
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104123,'CHAMI','Bilal','bilal.chami08@gmail.com','True','True', 'Athos2022', 1, 1, 1);
+    VALUES(12104123,'CHAMI','Bilal','bilal.chami08@gmail.com',1,1, 'Athos2022', 1, 1, 1);
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104124,'Cobain','Kurt','kurtcobain@gmail.com','True','True', 'Athos2022', 2, 2, 3);
+    VALUES(12104124,'Cobain','Kurt','kurtcobain@gmail.com',1,1, 'Athos2022', 2, 2, 3);
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104125,'ARH','Gustav','lilpeep@gmail.com','True','False', 'Porthos2022', 1 , 2, 3);
+    VALUES(12104125,'ARH','Gustav','lilpeep@gmail.com',1,0, 'Porthos2022', 1 , 2, 3);
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104126,'Wrld','Juice','juicewrld999@gmail.com','True','False', 'Porthos2022', 2, 4, 1);
+    VALUES(12104126,'Wrld','Juice','juicewrld999@gmail.com',1,0, 'Porthos2022', 2, 4, 1);
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104127,'Ben','Sami','BenSami@gmail.com','False','True', 'Aramis2022', 1, 2, 4);
+    VALUES(12104127,'Ben','Sami','BenSami@gmail.com',0,1, 'Aramis2022', 1, 2, 4);
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104128,'Lacy','Steve','SteveLacy@gmail.com','False','True', 'Aramis2022', 3, 4, 1);
+    VALUES(12104128,'Lacy','Steve','SteveLacy@gmail.com',0,1, 'Aramis2022', 3, 4, 1);
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104129,'Postic','Kevin','PosticKevin@gmail.com','False','True', 'Aramis2022', 2, 1, 3);
+    VALUES(12104129,'Postic','Kevin','PosticKevin@gmail.com',0,1, 'Aramis2022', 2, 1, 3);
 INSERT INTO Etudiant( Student_ID, Nom, Prenom, Mail, Stage_detention, Visibility_flag, Groupe, Personnel_ID, Entreprise_ID, Formation_ID)
-    VALUES(12104130,'Truncks','Kid','KidTruncks@gmail.com','False','True', 'Aramis2022', 4, 3 ,2);
+    VALUES(12104130,'Truncks','Kid','KidTruncks@gmail.com',0,1, 'Aramis2022', 4, 3 ,2);
 
 INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
  VALUES (1, 'Chami', 'Charle','Chami.Charle@gmail.com',1);
@@ -197,28 +197,28 @@ INSERT INTO Tuteur (Tuteur_ID, Nom, Prenom ,Contact , Entreprise_ID)
  VALUES (4, 'CV','2001-01-01', 'https://www.modeles-de-cv.com/wp-content/uploads/2022/09/modele-cv-avec-photo.jpg',2,12104130);
 
 INSERT INTO Commentaire (Commentaire_ID, Visibilite_flag, Vue_flag,Commentaire,Personnel_ID,Document_ID)
- VALUES (1, 0, 'True','mauvais',1,1);
+ VALUES (1, 0, 1,'mauvais',1,1);
 INSERT INTO Commentaire (Commentaire_ID, Visibilite_flag, Vue_flag,Commentaire,Personnel_ID,Document_ID)
- VALUES (2, 0, 'True','Trés bon',1,2);
+ VALUES (2, 0, 1,'Trés bon',1,2);
 INSERT INTO Commentaire (Commentaire_ID, Visibilite_flag, Vue_flag,Commentaire,Personnel_ID,Document_ID)
- VALUES (3, 1, 'True','A changer',4,2);
+ VALUES (3, 1, 1,'A changer',4,2);
 INSERT INTO Commentaire (Commentaire_ID, Visibilite_flag, Vue_flag,Commentaire,Personnel_ID,Document_ID)
- VALUES (4, 1, 'True','A refaire',2,3);
+ VALUES (4, 1, 1,'A refaire',2,3);
 
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
- VALUES (1, 'developpeur web', 2022 ,8,'True',1,1,12104123,1);
+ VALUES (1, 'developpeur web', 2022 ,8,1,1,1,12104123,1);
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
- VALUES (2, 'réseau', 2022 ,9,'True',1,2,12104124,3);
+ VALUES (2, 'réseau', 2022 ,9,1,1,2,12104124,3);
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
- VALUES (3, 'réseau', 2021 ,10,'True',1,3,12104127,2);
+ VALUES (3, 'réseau', 2021 ,10,1,1,3,12104127,2);
 INSERT INTO Stage (Stage_ID, Mission, Année ,Duree , Gratification,Teletravail,Personnel_ID,Student_ID,Tuteur_ID)
-VALUES (4, 'developpeur web', 2022 ,9,'False',1,1,12104130,2);
+VALUES (4, 'developpeur web', 2022 ,9,0,1,1,12104130,2);
 
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
- VALUES(1, 'En attente', 'True', 1);
+ VALUES(1, 'En attente', 1, 1);
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
- VALUES(2, 'Validé', 'True', 2);
+ VALUES(2, 'Validé', 1, 2);
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
- VALUES(3, 'Refusé', 'False', 3);
+ VALUES(3, 'Refusé', 0, 3);
 INSERT INTO BOS( BOS_ID, Status, BOS_Flag, Document_ID)
- VALUES(4, 'Validé', 'False', 4);
+ VALUES(4, 'Validé', 0, 4);
