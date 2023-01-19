@@ -153,10 +153,10 @@ INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Fo
 INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (2, 'ZARGAYOUNA','Haifa', 'haifa.zargayouna@lipn.univ-paris13.fr', 1, 'Validateur', 2);
 INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (3, 'HEBERT', 'David', 'hebert.iut@gmail.com', 1, 'Validateur', 3);
 INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'BUTELLE', 'Franck', 'franck.butelle@lipn.univ-paris13.fr', 1, 'Validateur', 4);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'BACHER', 'David', 'david.bacher@lipn.univ-paris13.fr', 1, 'Enseignant', 5);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'CITRON', 'Chiara', 'chiara.citron@lipn.univ-paris13.fr', 1, 'Enseignant', 6);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'ABOUKINANE', 'Alain', 'alin.aboukinane@lipn.univ-paris13.fr', 1, 'Enseignant', 7);
-INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (4, 'TORTI ALCAYAGA', 'Agathe', 'aghate.torti@lipn.univ-paris13.fr', 1, 'Enseignant', 8);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (5, 'BACHER', 'David', 'david.bacher@lipn.univ-paris13.fr', 1, 'Enseignant', 5);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (6, 'CITRON', 'Chiara', 'chiara.citron@lipn.univ-paris13.fr', 1, 'Enseignant', 6);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (7, 'ABOUKINANE', 'Alain', 'alin.aboukinane@lipn.univ-paris13.fr', 1, 'Enseignant', 7);
+INSERT INTO Personnel(Personnel_ID, Nom, Prenom, Mail, Visibility_flag, Role, Formation_ID) VALUES (8, 'TORTI ALCAYAGA', 'Agathe', 'aghate.torti@lipn.univ-paris13.fr', 1, 'Enseignant', 8);
 
 INSERT INTO Entreprise(Entreprise_ID, Nom, Description, Adresse, Telephone, Lieux)
     VALUES(1,'Microsoft','Developper Web','rue des chaussettes',911,'Paris');
